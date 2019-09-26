@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>User Admin</title>
+    <h1>User Admin</h1>
     <link rel="stylesheet" href=
             "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href=
@@ -25,30 +25,37 @@
         <th>Role</th>
         <th>&nbsp;</th>
     </tr>
+    </thead>
 
     <tr class="wbdv-form">
         <td><input id="usernameFld" class="form-control"
                    placeholder="Username" /></td>
         <td><input id="passwordFld" class="form-control"
+                   type="password"
                    placeholder="Password" /></td>
         <td><input id="firstNameFld" class="form-control"
                    placeholder="First Name" /></td>
         <td><input id="lastNameFld" class="form-control"
                    placeholder="Last Name" /></td>
         <td><select id="roleFld" class="form-control">
-            <option value="FACULTY">Faculty</option>
-            <option value="STUDENT">Student</option>
-            <option value="ADMIN">Admin</option>
+            <option value="Faculty">Faculty</option>
+            <option value="Student">Student</option>
+            <option value="Admin">Admin</option>
         </select></td>
         <td><span class="float-right" style="white-space: nowrap">
-      <i class="fa-2x fa fa-search wbdv-search"></i> <i
-                class="fa-2x fa fa-plus wbdv-create"></i> <i
+            <i id="searchBtn"
+              class="fa-2x fa fa-search wbdv-search"></i>
+            <i id="createBtn"
+               class="fa-2x fa fa-plus wbdv-create"></i>
+            <i id="updateBtn"
                 class="fa-2x fa fa-check wbdv-update"></i>
   </span></td>
     </tr>
+
+    <tbody class="wbdv-tbody">
     <tr class="wbdv-template wbdv-user wbdv-hidden">
         <td class="wbdv-username">ada</td>
-        <td>&nbsp;</td>
+        <td class="wbdv-password">***</td>
         <td class="wbdv-first-name">Ada</td>
         <td class="wbdv-last-name">Lovelace</td>
         <td class="wbdv-role">FACULTY</td>
